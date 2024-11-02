@@ -1,0 +1,173 @@
+<!-- button -->
+ <button class="btn-large btn-danger">Large</button>
+ <button>Default</button>
+ <button class="btn-small">Small</button>
+ <a href="#" class="paper-btn">Link</a>
+ <button class="btn-block btn-secondary">Block level</button>
+ <button class="btn-success" disabled>Disabled</button>
+ <input type="button" class="btn-primary" value="Primary"/>
+ <button class="btn-success">Success</button>
+ <button class="btn-warning">Warning</button>
+ <button class="btn-secondary-outline">Secondary</button>
+ <button class="btn-danger-outline">Secondary</button>
+
+ <!-- card -->
+ <div class="card" style="width: 20rem;">
+ <img src="https://picsum.photos/768" alt="Card example image">
+ <div class="card-body">
+ <h4 class="card-title">My awesome Paper card!</h4>
+ <h5 class="card-subtitle">Nice looking subtitle.</h5>
+ <p class="card-text">
+ Notice that the card width in this example have been set to 20rem,
+otherwise it will try to fill the current container/row where the card
+is.
+ </p>
+ <button>Let me go here!</button>
+ </div>
+ </div>
+
+ <!-- table -->
+ <table class="table-hover">
+ <thead>
+ <tr>
+ <th>#</th>
+ <th>Name</th>
+ <th>Position</th>
+ <th>Location</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td>1</td>
+ <td>Bob Dylan</td>
+ <td>Musician</td>
+ <td>California, USA</td>
+ </tr>
+ <tr>
+ <td>2</td>
+ <td>Eric Clapton</td>
+ <td>Musician</td>
+ <td>Ohio, USA</td>
+ </tr>
+ <tr>
+ <td>3</td>
+ <td>Daniel Kahneman</td>
+ <td>Psychologist</td>
+ <td>California, USA</td>
+ </tr>
+ </tbody>
+ </table>
+
+ <!-- modal -->
+<label class="paper-btn">Open Modal!</label>
+ <input class="modal-state" id="modal-1" type="checkbox">
+ <div class="modal">
+ <div class="modal-body">
+ <label class="btn-close" for="modal-1">X</label>
+ <h4 class="modal-title">Modal Title</h4>
+ <h5 class="modal-subtitle">Modal Subtitle</h5>
+ <p class="modal-text">This is an example of modal which is
+implemented with pure CSS! :D</p>
+ <button class="btn-secondary">Save</button>
+ <button class="btn-danger-outline">Cancel</button>
+ </div>
+ </div>
+
+ <!-- flexgrid -->
+ <div class="row">
+ <div class="col-2 col background-primary">col-2 col</div>
+ <div class="col-4 col background-secondary">col-4 col</div>
+ <div class="col-6 col background-danger">col-6 col</div>
+ </div>
+ <div class="row">
+ <div class="sm-6 md-8 lg-10 col background-success">sm-6 md-8 lg-10
+col</div>
+ <div class="sm-6 md-4 lg-2 col background-warning">sm-6 md-4 lg-2
+col</div>
+ </div>
+
+ <!-- form (input-select) -->
+ <div class="form-group">
+ <label>Input</label>
+ <input type="text" placeholder="Nice input">
+ </div>
+
+ <div class="form-group">
+ <label>Select</label>
+ <select>
+ <option value="1">Pilihan 1</option>
+ <option value="2">Pilihan 2</option>
+ <option value="3">Pilihan 3</option>
+ </select>
+ </div>
+ <div class="row">
+<div class="col sm-3 padding-small">
+ Block Level
+ </div>
+ <div class="col sm-9 padding-none">
+ <div class="form-group">
+ <input class="input-block" type="text">
+ </div>
+ </div>
+ </div>
+
+ <!-- form (radio-checkbox) -->
+ <fieldset>
+ <legend>Some Radio Buttons</legend>
+ <div class="form-group">
+ <label class="paper-radio">
+ <input type="radio" name="radio" value="1"> <span>This is the
+first option</span>
+ </label>
+ <label class="paper-radio">
+ <input type="radio" name="radio" value="2" checked> <span>This is
+the second option</span>
+ </label>
+ </div>
+ </fieldset>
+ <fieldset>
+ <legend>Some Check Boxes</legend>
+ <div class="form-group">
+ <label class="paper-check">
+ <input type="checkbox" name="centang" value="isi1" checked>
+<span>This is the first check</span>
+ </label>
+ <label class="paper-check">
+ <input type="checkbox" name="centang" value="isi2"> <span>This is
+the second check</span>
+ </label>
+ </div>
+ </fieldset>
+
+ <!-- form (switch) -->
+ <fieldset>
+ <legend>Some Switch</legend>
+ <div class="form-group">
+<label class="paper-switch"><!-- paper-switch-2 -->
+ <input type="checkbox" />
+ <span class="paper-switch-slider"></span>
+ </label>
+ <label class="paper-switch-label">Square switch</label>
+ <br><br>
+ <label class="paper-switch">
+ <input type="checkbox" checked />
+ <span class="paper-switch-slider round"></span>
+ </label>
+ <label class="paper-switch-label">Circle switch</label>
+ </div>
+ </fieldset>
+
+ <!-- form (slider) -->
+ <fieldset>
+ <legend>Sliders</legend>
+ <div class="form-group">
+ <label>Note /10 :</label>
+ <input type="range" min="0" max="10">
+ </div>
+ <div class="form-group">
+ <label>Percentage (<code>.input-block</code>) :</label>
+ <input class="input-block" type="range" min="0" max="100"
+oninput="output.value = this.value + '%';">
+ <output id="output">50%</output>
+ </div>
+ </fieldset>

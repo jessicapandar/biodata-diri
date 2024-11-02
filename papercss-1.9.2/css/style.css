@@ -1,0 +1,65 @@
+/* Reset margin dan padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style untuk header browser */
+.browser-header {
+    background-color: #ddd;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.browser-header .icons {
+    display: flex;
+    gap: 8px;
+}
+
+.browser-header .url-bar {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    margin: 0 10px;
+    text-align: center;
+}
+
+/* Style untuk judul dan navigasi */
+.header {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #ddd;
+    padding: 10px 0;
+    margin-top: 10px;
+}
+
+.navbar a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+}
+
+/* Style untuk konten */
+.content {
+    text-align: center;
+    padding: 40px;
+    font-size: 18px;
+}
+
+/* Style untuk footer */
+.footer {
+    text-align: center;
+    background-color: #ddd;
+    padding: 10px;
+    margin-top: 20px;
+}
